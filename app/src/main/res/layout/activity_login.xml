@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pri_background"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBone"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_username"
+            android:textColor="@color/colorPrimevalSuperLight"
+            android:layout_marginVertical="8dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/edit_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edit"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="15sp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/colorPrimevalSuperLight"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            android:textColor="@color/colorPrimevalSuperLight"
+            android:layout_marginVertical="8dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_edit"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="15sp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/colorPrimevalSuperLight"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/login_edit"
+            android:onClick="onClick"
+            android:text="@string/login_btn"
+            android:textColor="@color/colorPrimevalSuperLight" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
